@@ -1,7 +1,5 @@
-from os import getenv
 from typing import List, Optional
-
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from src.db.schema import Author, Genre, Book, Base
