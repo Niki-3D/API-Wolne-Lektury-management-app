@@ -7,7 +7,7 @@ Base = declarative_base()
 class Author(Base):
     __tablename__ = "authors"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, autoincrement=True , primary_key=True)
     name = Column(String, unique=True, nullable=False)
 
     def __repr__(self):
@@ -16,7 +16,7 @@ class Author(Base):
 class Genre(Base):
     __tablename__ = "genres"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer,autoincrement=True  ,primary_key=True)
     name = Column(String, unique=True, nullable=False)
 
     def __repr__(self):

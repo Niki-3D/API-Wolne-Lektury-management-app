@@ -1,6 +1,7 @@
 from typing import List, Tuple
 from model import BookModel
 from src.db.db import Author, Kind
+from src.db.db import DatabaseHandler as Database
 
 class BookLogic:
     def __init__(self, db: Database):
